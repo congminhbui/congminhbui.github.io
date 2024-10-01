@@ -1,31 +1,33 @@
+/* Importing Josefin Sans font from Google */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
+/* Removes default padding and margin */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Sets background color, text color, font family for the whole website */
 body {
   background-color: #171717;
   color: #d2d2d2;
   font-family: "Josefin Sans", sans-serif;
 }
 
+/* Reduced opacity for footer and hr */
 hr,
 footer {
   opacity: 30%;
 }
 
-footer,
-header {
-  color: #d2d2d2;
-}
-
+/* Changes the font-weight to 600 */
 header,
 h1 {
   font-weight: 600;
 }
 
+/* Pushes the left and right items to the edges
+  and centers them on one other*/
 header {
   padding: 2% 3%;
   display: flex;
@@ -34,6 +36,7 @@ header {
   position: relative;
 }
 
+/* Centers the hr and make it shorter */
 hr {
   max-width: 12%;
   margin-left: auto;
@@ -41,11 +44,13 @@ hr {
   margin-bottom: 6px;
 }
 
+/* Centers the footer */
 footer {
   text-align: center;
   margin-bottom: 6px;
 }
 
+/* Aligns contents in main */
 main {
   padding: 0 3%;
   display: block;
@@ -53,14 +58,17 @@ main {
   align-items: center;
 }
 
+/* Displays as flex to fit aside image */
 #about {
   display: flex;
 }
 
+/* If website width were changed, retains aspect ratio */
 img {
   height: auto;
 }
 
+/* Centers hero image */
 .homeimg {
   max-width: 65%;
   margin-left: auto;
@@ -70,29 +78,19 @@ img {
   width: 65%;
 }
 
+/* Hides alternate hero image */
 #homepic2 {
   visibility: hidden;
   width: 0;
   height: 0;
 }
 
-ul {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-nav {
-  padding-left: 3%;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/* Displays side by side nav bar */
 .navlinks li {
   display: inline-block;
 }
 
+/* Styling nav links */
 .navlinks li a {
   text-align: center;
   float: right;
@@ -104,12 +102,19 @@ nav {
   font-size: 18px;
 }
 
+/* Adds background color and animation to nav links when hovered over  */
 .navlinks li a:hover {
   transition: all 0.3s ease 0s;
   background-color: #d2d2d2;
   color: #171717;
 }
 
+/* Adds left padding to the responsive nav bar */
+nav {
+  padding-left: 3%;
+}
+
+/* Responsive nav toggle on the left */
 .navbtn {
   height: 34px;
   width: 44px;
@@ -121,6 +126,7 @@ nav {
   justify-content: center;
 }
 
+/* Black line inside toggle */
 .navbtn span {
   display: block;
   height: 2px;
@@ -129,6 +135,7 @@ nav {
   position: relative;
 }
 
+/* Creates 2 more black lines */
 .navbtn span::before,
 .navbtn span::after {
   content: "";
@@ -139,65 +146,76 @@ nav {
   left: 0;
 }
 
+/* Positioning the 3 black lines */
 .navbtn span::before {
   top: -6px;
 }
-
 .navbtn span::after {
   top: 6px;
 }
 
+/* Hides the HTML button elements */
 #navbuttoncheck {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-article {
-  max-width: 50%;
-}
-
+/* Seperates contents inside section */
 section {
   margin: 10% 0;
 }
 
+/* Article styling */
 article {
+  max-width: 50%;
   font-weight: 350;
   margin-left: 3%;
   margin-right: 3%;
 }
 
+/* Makes the aside image float to the right of the page */
 aside img {
   padding: 0 5%;
   max-width: 80%;
   float: right;
 }
 
+/* Changes font size in the about section */
 #aboutMe {
   font-size: 13pt;
 }
 
+/* Seperates about page's paragraphs */
 #aboutMe p {
   padding: 2%;
 }
 
+/* Styling about page's numbered list */
+ol {
+  margin-top: 2%;
+  margin-left: 16%;
+}
+
+/* Makes timetable responsive by adding a scroll bar when overflowed */
 .table-container {
   max-width: 100%;
   overflow-x: scroll;
 }
 
+/* Styling about page's texts */
 #timeTable p,
 #form p {
   font-size: 14pt;
   padding-bottom: 8px;
 }
 
+/* Styling about page's timetable */
 th,
 td {
   padding: 15px;
   text-align: left;
 }
-
 table,
 th,
 td {
@@ -206,11 +224,7 @@ td {
   background-color: #333333;
 }
 
-ol {
-  margin-top: 2%;
-  margin-left: 16%;
-}
-
+/* Hiding alternattive side image in desktop mode */
 #responsiveside {
   margin-top: 5%;
   visibility: hidden;
@@ -218,6 +232,7 @@ ol {
   height: 0;
 }
 
+/* Styling about page's input section */
 input {
   background-color: #333333;
   border: 1px solid #171717;
@@ -226,37 +241,48 @@ input {
   text-align: center;
 }
 
+/* Displays contents as 3 columns with gaps on left and right side */
 .photoGallery {
   display: flex;
   gap: 20px;
   padding: 1%;
 }
 
+/* Each images in the columns are stacked on top of each other
+ with gaps in the top and bottom */
 .column {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+/* Styling images */
 .photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
+/* Styling animation page's gifs */
 .gif {
   max-width: 95%;
 }
 
+/* Styling animation page's header text */
 #animations section h2 {
   text-align: center;
 }
 
+/* Styling animation page's list */
 #animations section ol li {
   font-size: 15pt;
   margin: 2%;
 }
 
+/* Centers animation page's main */
+#ani {
+  display: flex;
+}
+
+/* Styling animation page */
 #animations {
   max-width: 100%;
   margin-left: auto;
@@ -265,16 +291,19 @@ input {
 }
 
 @media (max-width: 1100px) {
+  /* Hides aside image in about page */
   aside img {
     visibility: hidden;
     width: 0;
     height: 0;
   }
 
+  /* Changes max width */
   article {
     max-width: 90%;
   }
 
+  /* Displays alternative image in about page */
   #responsiveside {
     visibility: visible;
     width: 100%;
@@ -283,12 +312,14 @@ input {
     margin-right: auto;
   }
 
+  /* Hides the hero image */
   #homepic1 {
     visibility: hidden;
     width: 0;
     height: 0;
   }
 
+  /* Displays alternative hero image */
   #homepic2 {
     visibility: visible;
     width: 100%;
@@ -301,15 +332,13 @@ input {
   }
 }
 
-#ani {
-  display: flex;
-}
-
 @media (max-width: 860px) {
+  /* Shows nav toggle */
   .navbtn {
     display: flex;
   }
 
+  /* New nav bar */
   nav {
     position: absolute;
     left: 0;
@@ -320,32 +349,38 @@ input {
     visibility: hidden;
   }
 
+  /* Opening animation */
   #navbuttoncheck:checked ~ nav {
     opacity: 1;
     visibility: visible;
     transition: all 0.2s ease 0s;
   }
 
+  /* Closing animation */
   #navbuttoncheck:not(:checked) ~ nav {
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease 0s;
   }
 
+  /* Changes font color when hovered */
   .navlinks li a:hover {
     background-color: transparent;
     color: #171717;
   }
 
+  /* Turns the gallery into 1 column */
   .photoGallery {
     flex-direction: column;
     padding: 10% 0%;
   }
 
+  /* Change font size */
   header {
     font-size: 10pt;
   }
 
+  /* Header styling */
   h1,
   .navbtn {
     margin-top: 10%;
@@ -354,10 +389,12 @@ input {
     margin-right: 6%;
   }
 
+  /* Article styling */
   article {
     margin-left: 18px;
   }
 
+  /* Article's text styling */
   article p {
     margin-left: 3%;
     margin-right: 3%;
