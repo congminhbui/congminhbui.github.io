@@ -848,7 +848,8 @@ nav {
   background-color: #171717;
   position: relative;
 }
-img .navbtn span::before,
+
+.navbtn span::before,
 .navbtn span::after {
   content: "";
   position: absolute;
@@ -974,6 +975,10 @@ input {
 #animations section ol li {
   font-size: 15pt;
   margin: 2%;
+}
+
+#ani {
+  display: flex;
 }
 
 #animations {
