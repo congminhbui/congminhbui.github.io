@@ -301,6 +301,10 @@ input {
   }
 }
 
+#ani {
+  display: flex;
+}
+
 @media (max-width: 860px) {
   .navbtn {
     display: flex;
