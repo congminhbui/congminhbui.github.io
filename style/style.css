@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #171717;
+  color: #d2d2d2;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+hr,
+footer {
+  opacity: 30%;
+}
+
+footer,
+header {
+  color: #d2d2d2;
+}
+
+header,
+h1 {
+  font-weight: 600;
+}
+
+header {
+  padding: 2% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+hr {
+  max-width: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+main {
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  height: auto;
+}
+
+.homeimg {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2%;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav {
+  padding-left: 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlinks li {
+  display: inline-block;
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  float: right;
+  text-decoration: none;
+  color: #d2d2d2;
+  padding: 0px 16px;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  font-size: 18px;
+}
+
+.navlinks li a:hover {
+  background-color: #d2d2d2;
+  color: #171717;
+}
+
+.navbtn {
+  height: 34px;
+  width: 44px;
+  background-color: #d2d2d2;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbtn span {
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #171717;
+  position: relative;
+}
+
+.navbtn span::before,
+.navbtn span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #171717;
+  left: 0;
+}
+
+.navbtn span::before {
+  top: -6px;
+}
+
+.navbtn span::after {
+  top: 6px;
+}
+
+#navbuttoncheck {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+article {
+  max-width: 50%;
+}
+
+section {
+  margin: 10% 0;
+}
+
+article {
+  font-weight: 350;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+aside img {
+  padding: 0 5%;
+  max-width: 80%;
+  float: right;
+}
+
+#aboutMe {
+  font-size: 13pt;
+}
+
+#aboutMe p {
+  padding: 2%;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+#timeTable p,
+#form p {
+  font-size: 14pt;
+  padding-bottom: 8px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+table,
+th,
+td {
+  border: 1px solid #171717;
+  border-collapse: collapse;
+  background-color: #333333;
+}
+
+ol {
+  margin-top: 2%;
+  margin-left: 16%;
+}
+
+#responsiveside {
+  margin-top: 5%;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+input {
+  background-color: #333333;
+  border: 1px solid #171717;
+  color: #d2d2d2;
+  padding: 5pt;
+  text-align: center;
+}
+
+.photoGallery {
+  display: flex;
+  gap: 20px;
+  padding: 1%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gif {
+  max-width: 95%;
+}
+
+#animations section h2 {
+  text-align: center;
+}
+
+#animations section ol li {
+  font-size: 15pt;
+  margin: 2%;
+}
+
+#animations {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18pt;
+}
+
+@media (max-width: 1100px) {
+  aside img {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  article {
+    max-width: 90%;
+  }
+
+  #responsiveside {
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .navbtn {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #333333;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #navbuttoncheck:checked ~ nav {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease 0s;
+  }
+
+  #navbuttoncheck:not(:checked) ~ nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease 0s;
+  }
+
+  .navlinks li a:hover {
+    background-color: transparent;
+    color: #171717;
+  }
+
+  .photoGallery {
+    flex-direction: column;
+    padding: 10% 0%;
+  }
+
+  .homeimg {
+    max-width: 90%;
+    padding: 60% 5%;
+  }
+
+  header {
+    font-size: 10pt;
+  }
+
+  h1,
+  .navbtn {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  article {
+    margin-left: 18px;
+  }
+
+  article p {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
