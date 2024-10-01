@@ -48,9 +48,13 @@ footer {
 
 main {
   padding: 0 3%;
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
+}
+
+#about {
+  display: flex;
 }
 
 img {
@@ -62,6 +66,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 2%;
+  display: block;
+  width: 65%;
+}
+
+#homepic2 {
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 ul {
@@ -116,8 +128,7 @@ nav {
   background-color: #171717;
   position: relative;
 }
-
-.navbtn span::before,
+img .navbtn span::before,
 .navbtn span::after {
   content: "";
   position: absolute;
@@ -270,6 +281,23 @@ input {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #homepic1 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  #homepic2 {
+    visibility: visible;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+    display: block;
+    padding: 20% 0%;
+  }
 }
 
 @media (max-width: 860px) {
@@ -307,11 +335,6 @@ input {
   .photoGallery {
     flex-direction: column;
     padding: 10% 0%;
-  }
-
-  .homeimg {
-    max-width: 90%;
-    padding: 50% 5%;
   }
 
   header {
