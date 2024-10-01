@@ -128,7 +128,8 @@ nav {
   background-color: #171717;
   position: relative;
 }
-img .navbtn span::before,
+
+.navbtn span::before,
 .navbtn span::after {
   content: "";
   position: absolute;
