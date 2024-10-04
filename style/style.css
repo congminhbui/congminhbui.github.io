@@ -75,7 +75,7 @@ img {
   margin-right: auto;
   padding-bottom: 10px;
   display: block;
-  width: 65%;
+  /* width: 65%; */
 }
 
 /* Hides alternate hero image */
@@ -410,14 +410,14 @@ input {
     visibility: visible;
     width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     padding-bottom: 2%;
-    display: block;
+    /* display: block; */
     padding: 20% 0%;
   }
 
   .homeimg {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
