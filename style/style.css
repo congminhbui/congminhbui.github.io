@@ -85,13 +85,6 @@ img {
   height: 0;
 }
 
-/* ul {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-} */
-
 /* Displays side by side nav bar */
 .navlinks li {
   display: inline-block;
@@ -119,8 +112,6 @@ img {
 /* Adds left padding to the responsive nav bar */
 nav {
   padding-left: 3%;
-  /* justify-content: space-between;
-  align-items: center; */
 }
 
 /* Responsive nav toggle on the left */
@@ -272,37 +263,25 @@ input {
 /* Styling images */
 .photo img {
   width: 100%;
-  /* height: 100%; */
-  /* object-fit: cover; */
+}
+
+/* Centers animation page */
+#animations {
+  margin: 0 auto;
+}
+
+/* Styling animation page's header text */
+#animations h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0 20px 0;
 }
 
 /* Styling animation page's gifs */
 .gif {
+  display: block;
+  margin: 2% auto;
   max-width: 95%;
-}
-
-/* Styling animation page's header text */
-#animations section h2 {
-  text-align: center;
-}
-
-/* Styling animation page's list */
-#animations section ol li {
-  font-size: 15pt;
-  margin: 2%;
-}
-
-/* Centers animation page's main */
-#ani {
-  display: flex;
-}
-
-/* Styling animation page */
-#animations {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18pt;
 }
 
 @media (max-width: 1100px) {
