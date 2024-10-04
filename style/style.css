@@ -85,6 +85,13 @@ img {
   height: 0;
 }
 
+/* ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+} */
+
 /* Displays side by side nav bar */
 .navlinks li {
   display: inline-block;
@@ -112,6 +119,8 @@ img {
 /* Adds left padding to the responsive nav bar */
 nav {
   padding-left: 3%;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 
 /* Responsive nav toggle on the left */
@@ -191,6 +200,10 @@ aside img {
   padding: 2%;
 }
 
+#about h2 {
+  margin: 2% 0%;
+}
+
 /* Styling about page's numbered list */
 ol {
   margin-top: 2%;
@@ -259,6 +272,8 @@ input {
 /* Styling images */
 .photo img {
   width: 100%;
+  /* height: 100%; */
+  /* object-fit: cover; */
 }
 
 /* Styling animation page's gifs */
