@@ -1,1 +1,1 @@
-![website homepage]([http://url/to/img.png](https://cdn.discordapp.com/attachments/864134015418105889/1299184969511473235/bt8vpRl.png?ex=671c47ca&is=671af64a&hm=6e6a6e55de3c3b04da5519735190101a8ac0b94e5d03bff9e3c208007bcc124b&))
+![website homepage](https://cdn.discordapp.com/attachments/864134015418105889/1299184969511473235/bt8vpRl.png?ex=671c47ca&is=671af64a&hm=6e6a6e55de3c3b04da5519735190101a8ac0b94e5d03bff9e3c208007bcc124b&)
